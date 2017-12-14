@@ -1,0 +1,353 @@
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    font-family: MicrosoftJhengHeiRegular;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration:none;
+}
+li {
+    list-style-type: none;  
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*header CSS*/
+.html-clear{
+    clear: both;
+}
+.wrap{
+    max-width: 1049px;
+    margin: 0 auto;
+    background: #EFE9E7;
+}
+/*header*/
+.header-img {
+    height: 420px;
+    background-image: url(../img/header_desktop.png);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+@media (max-width:768px){
+    .header-img{
+        background-image: url(../img/header_mobile.png)
+    }
+}
+/*header-menu*/
+.header-menu{
+    height: 60px;
+    background: rgba(0,0,0,0.75);
+}
+/*logo*/
+.menu-logo{
+    float: left;
+    height: 35px;
+}
+.menu-logo a{
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 24px;
+    color: #FFFFFF;
+    font-family: NotoSansCJKtc-Black;
+}
+.menu-logo h1{
+    margin-top: 17px;
+}
+/*menu-btn*/
+.menu-btn{
+    float: right;
+    margin-top: 17px;
+}
+.menu-btn li{
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.menu-btn ul li a{
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.menu-btn ul li a:hover{
+    font-size: 20px;
+}
+.menu-bar {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    padding: 10px 10px 0 0;
+    z-index: 13;
+}
+.menu-bar i{
+    color: rgb(255, 255, 255);
+}
+.menu-bar i.active{
+    color: black;
+}
+.menu-hb{
+    width: 100%;
+    display: none;
+    background-color: rgb(255, 255, 255,0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 12;
+}
+.menu-hb ul{
+    padding-top: 20%;
+}
+.menu-hb li{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+}
+.menu-hb a{
+    color: black;
+}
+
+@media (max-width:768px){
+    .menu-btn{
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+    }
+    .menu-hb{
+        height: 100%;
+    }
+    .menu-hb a:hover{
+        color: blue;
+    }
+    .menu-bar a:hover{
+        font-size: 17px;;
+    }
+}
+/*header-say*/
+.header-say{
+    width: 460px;
+    background-color: rgba(0, 0, 0,0.35);
+    position: relative;
+    top:25%;
+    left: 30%;
+    z-index: 1;
+}
+.header-say h2{
+    color: #FFFFFF;
+    font-size: 36px;
+    text-align: center;
+    padding: 16px;
+}
+.header-say p{
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px 0;
+}
+@media (max-width:768px){
+    .header-say{
+        width: 300px;
+        height: 194px;
+        top: 15%;
+    }
+}
+@media (max-width:736px){
+    .header-say{
+        left: 30%;
+    }
+}
+@media(max-width:568px){
+    .header-say{
+        left: 25%;
+    }
+}
+@media(max-width:414px){
+    .header-say{
+        left: 13%;
+    }
+}
+@media(max-width:375px){
+    .header-say{
+        left: 10%;
+    }
+}
+@media (max-width:320px){
+    .header-say{
+        left: 2.5%;
+    }
+}
+@media(max-width:319px){
+    .header-say{
+        left: auto;
+        width: auto;
+    }
+}
+/*content CSS*/
+.content{
+    background-color: #EFE9E7;
+}
+.content-title{
+    padding-bottom: 35px;
+}
+.content-title h3{
+    font-family: NotoSansCJKtc-Black;
+    font-size: 48px;
+    color: #3D1101;
+    text-align: center;
+    padding-top: 50px;
+}
+.content-title p{
+    font-family: NotoSansCJKtc-Medium;
+    font-size: 20px;
+    color: #3D1101;
+    text-align: center;
+}
+.content-loading{
+    width: 620px;
+    height: 316px;
+    background: #EFE9E7;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    margin: 0 auto;
+    border-color: #FF5E45;
+    border-style: solid;
+    border-width: 5px 0px 0px 0px;
+    margin-bottom: 50px;
+}
+.content-loading span{
+    font-family: NotoSansCJKtc-Black;
+    font-size: 18px;
+    color: #3D1101;
+    text-align: center;
+    padding-top: 15px;
+    display: block;
+}
+.content-loading ul {
+    padding-top: 20px;
+}
+.content-loading li{
+    float: left;
+    width: 46%;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-sizing: border-box;
+}
+.loading-terms{
+    font-size: 18px;
+    color: #3D1101;
+    line-height: 22px;
+}
+.loading-form label{
+    padding: 20px 0 5px 0 ;
+}
+.loading-form input{
+    min-width: 100%;
+}
+.loading-form button{
+    float: right;
+    background: #F56C23;
+    border-radius: 3px;
+}
+@media (max-width:569px){
+    .content-loading{
+        width: 90%;
+        height: auto;
+        box-shadow: 10px 10px 5px #888888;
+    }
+    .content-loading span{
+        margin-bottom: 20px;
+    }
+    .content-loading li{
+        float: none;
+        width: 96%;
+    }
+}
+/*footer CSS*/
+.footer{
+    background: #EFE9E7;
+}
+.footer-inform{
+    padding: 50px 0 150px 43px;
+}
+.footer-inform span{
+    font-size: 24px;
+    color: #3D1101;
+}
+.footer-inform p{
+    font-size: 16px;
+    color: #3D1101;
+    margin-top: 14px;
+    line-height: 24px;
+}
+.footer-inform ul{
+    float: right;
+}
+.footer-inform li{
+    float: left;
+    width: 29.3333%;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-sizing: border-box;
+}
+@media (max-width:768px){
+    .footer-inform{
+        padding: 0;
+    }
+    .footer-inform h1{
+        padding: 50px 0;
+    }
+    .footer-inform ul{
+        float: none;
+    }
+    .footer-inform li{
+        float: none;
+        width: 96%;
+        padding-top: 30px;
+        padding-left: 10px;
+    }
+    .footer-logo img{
+        padding: 40px 0 ;
+        margin: 0 auto; 
+    }
+}
